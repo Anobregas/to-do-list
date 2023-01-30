@@ -39,8 +39,8 @@ var hour5N = 5
     displayTime()
 
     function displayTime() {
-      var currentTime = dayjs().format('MMM DD, YYYY [at] hh:mm:ss a');
-
+      var currentTime= dayjs().format('MMM DD, YYYY [at] hh:mm:ss a');
+      //insert dayjs. into current day
       todayDate.text(currentTime);
       console.log(currentTime)
       //Use class for "past", "present", and "future" to apply styles to the
@@ -97,4 +97,4 @@ var hour5N = 5
       // attribute of each time-block be used to do this?
       //
       // X TODO: Add code to display the current date in the header of the page.
-    })
+    }})
