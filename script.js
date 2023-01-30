@@ -53,15 +53,15 @@ var hour5N = 5
       //code is implemented.
       if (currentTime < timeBlock) {
         console.log("past")
-        timeBlock.addClass("past")
+        timeBlock.addClass(pastTimeBlock)
       } else if (currentTime == timeBlock) {
         console.log("present")
-        timeBlock.addClass("present")
-        timeBlock.removeClass("past")
+        timeBlock.addClass(presentTimeBlock)
+        timeBlock.removeClass(pastTimeBlock)
       } else {
         console.log("future")
-        timeBlock.addClass("future")
-        timeBlock.removeClass("past", "present")
+        timeBlock.addClass(futureTimeBlock)
+        timeBlock.removeClass(pastTimeBlock, presentTimeBlock)
       }
 
 
